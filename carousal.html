@@ -80,26 +80,92 @@
                 $(this).animate({ width: '5px' }, 500);
             }).trigger('mouseleave');
         });
+
+        $('#carousel2').hide();
+        $('#carousel3').hide();
+        $('#carousel4').hide();
+        $('#carousel5').hide();
+
+        function menu1() {
+            $('#carousel1').show();
+            $('#carousel2').hide();
+            $('#carousel3').hide();
+            $('#carousel4').hide();
+            $('#carousel5').hide();
+            $('#carousel6').hide();
+            $('#carousel7').hide();
+        }
+
+        function menu2() {
+            $('#carousel1').hide();
+            $('#carousel2').show();
+            $('#carousel3').hide();
+            $('#carousel4').hide();
+            $('#carousel5').hide();
+            $('#carousel6').hide();
+            $('#carousel7').hide();
+        }
+
+        function menu3() {
+            $('#carousel1').hide();
+            $('#carousel2').hide();
+            $('#carousel3').show();
+            $('#carousel4').hide();
+            $('#carousel5').hide();
+            $('#carousel6').hide();
+            $('#carousel7').hide();
+        }
+
+        function menu4() {
+            $('#carousel1').hide();
+            $('#carousel2').hide();
+            $('#carousel3').hide();
+            $('#carousel4').show();
+            $('#carousel5').hide();
+            $('#carousel6').hide();
+            $('#carousel7').hide();
+        }
+
+        function menu5() {
+            $('#carousel1').hide();
+            $('#carousel2').hide();
+            $('#carousel3').hide();
+            $('#carousel4').hide();
+            $('#carousel5').show();
+            $('#carousel6').hide();
+            $('#carousel7').hide();
+        }
+
+        function menu6() {
+            $('#carousel1').hide();
+            $('#carousel2').hide();
+            $('#carousel3').hide();
+            $('#carousel4').hide();
+            $('#carousel5').hide();
+            $('#carousel6').show();
+            $('#carousel7').hide();
+        }
     </script>
 
-    <div id="myCarousel" class="carousel slide full-height" data-interval="false">
-        <div id="nav">
-            <ul>
-                <li data-target="#myCarousel" data-slide-to="0" class="active">General</li>
-                <li data-target="#myCarousel" data-slide-to="1">Shopping Complex</li>
-                <li data-target="#myCarousel" data-slide-to="2">Basketball Court</li>
-                <li data-target="#myCarousel" data-slide-to="3">Gym</li>
-                <li data-target="#myCarousel" data-slide-to="4">Basketball Court</li>
-            </ul>
-        </div>
+    <div id="nav">
+        <ul>
+            <li onclick="menu1()" id="menu1" class="active">General</li>
+            <li onclick="menu2()" id="menu2">Basketball Court</li>
+            <li onclick="menu3()" id="menu3">Gym</li>
+            <li onclick="menu4()" id="menu4">Baseball Court</li>
+            <li onclick="menu5()" id="menu5">Hockey</li>
+            <li onclick="menu6()" id="menu6">Swimming Pool</li>
+        </ul>
+    </div>
 
+    <div id="carousel1" class="carousel slide full-height" data-interval="false">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel1" data-slide-to="1"></li>
+            <li data-target="#carousel1" data-slide-to="2"></li>
+            <li data-target="#carousel1" data-slide-to="3"></li>
+            <li data-target="#carousel1" data-slide-to="4"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -115,7 +181,86 @@
             </div>
 
             <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#carousel1" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel1" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div id="carousel2" class="carousel slide full-height" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel2" data-slide-to="1"></li>
+            <li data-target="#carousel2" data-slide-to="2"></li>
+            <li data-target="#carousel2" data-slide-to="3"></li>
+            <li data-target="#carousel2" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
                 <iframe width="1550px" height="700px" id="area" src="https://www.google.com/url?q=https://momento360.com/e/u/ff236991d8a5411b885ccb72f14fddc0?utm_campaign%3Dembed%26utm_source%3Dother%26heading%3D192.5%26pitch%3D-1.9%26field-of-view%3D75%26size%3Dmedium&sa=D&source=hangouts&ust=1614939425225000&usg=AFQjCNEZgDfK8kkdYguMdM2eEPMFuClKdA" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#carousel2" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel2" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div id="carousel3" class="carousel slide full-height" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel3" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel3" data-slide-to="1"></li>
+            <li data-target="#carousel3" data-slide-to="2"></li>
+            <li data-target="#carousel3" data-slide-to="3"></li>
+            <li data-target="#carousel3" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <iframe width="1550px" height="700px" id="area" src="https://momento360.com/e/u/de63011e6d9843ff928875700d4b5242?utm_campaign=embed&utm_source=other&heading=129.18&pitch=-1.7&field-of-view=75&size=medium" style="border:0;" allowfullscreen="" loading="lazy">
                 </iframe>
             </div>
 
@@ -125,19 +270,160 @@
             </div>
 
             <div class="item">
-                <iframe width="1550px" height="700px" id="area" src="https://momento360.com/e/u/7abb88af9a8c43cc8f8b51be87da8937?utm_campaign=embed&utm_source=other&heading=113&pitch=-12&field-of-view=75&size=medium" style="border:0;" allowfullscreen="" loading="lazy">
+                <iframe width="1550px" height="700px" id="area" src="https://www.google.com/maps/embed?pb=!4v1614843167469!6m8!1m7!1sCAoSLEFGMVFpcE5iYk54YU9oUlAwWUhHRlltZ2F6NXRkSHlLdHdSZjB4dERPWW1Y!2m2!1d37.439951002231!2d-122.15805078573!3f104.46831583675922!4f-2.457286301506997!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy">
                 </iframe>
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
             </div>
         </div>
 
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <a class="left carousel-control" href="#carousel3" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <a class="right carousel-control" href="#carousel3" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
             <span class="sr-only">Next</span>
         </a>
+    </div>
+
+    <div id="carousel4" class="carousel slide full-height" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel4" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel4" data-slide-to="1"></li>
+            <li data-target="#carousel4" data-slide-to="2"></li>
+            <li data-target="#carousel4" data-slide-to="3"></li>
+            <li data-target="#carousel4" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <iframe width="1550px" height="700px" id="area" src="https://www.google.com/maps/embed?pb=!4v1614843028781!6m8!1m7!1sCAoSLEFGMVFpcE5XejFMZU5panZ3d1hVdEpsN1JLT1lpMVNmM1BCSVBkdWxpdlVL!2m2!1d37.4350346!2d-122.1543374!3f139.62610737405547!4f-4.894011616296908!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+
+            <a class="left carousel-control" href="#carousel4" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel4" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="carousel5" class="carousel slide full-height" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel5" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel5" data-slide-to="1"></li>
+            <li data-target="#carousel5" data-slide-to="2"></li>
+            <li data-target="#carousel5" data-slide-to="3"></li>
+            <li data-target="#carousel5" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <iframe width="1550px" height="700px" id="area" src="https://momento360.com/e/u/7abb88af9a8c43cc8f8b51be87da8937?utm_campaign=embed&utm_source=other&heading=113&pitch=-12&field-of-view=75&size=medium" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="item">
+                <iframe width="1550px" height="700px" id="area" src="https://momento360.com/e/u/317681d2cf024a2b8e0d4cd52b655483?utm_campaign=embed&utm_source=other&heading=289.7&pitch=14.9&field-of-view=75&size=medium" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+
+
+            <a class="left carousel-control" href="#carousel5" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel5" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="carousel6" class="carousel slide full-height" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel6" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel6" data-slide-to="1"></li>
+            <li data-target="#carousel6" data-slide-to="2"></li>
+            <li data-target="#carousel6" data-slide-to="3"></li>
+            <li data-target="#carousel6" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <iframe width="1550px" height="700px" id="area" src="https://momento360.com/e/u/b005aab4c92840f5bd77253c706e1ba4?utm_campaign=embed&utm_source=other&heading=263&pitch=-12.3&field-of-view=75&size=medium" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+
+            <div class="item">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+
+
+            <a class="left carousel-control" href="#carousel6" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel6" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
 </body>
 </html>
