@@ -8,5 +8,5 @@ We are just pushing files to keep all content at a single place. We have not cre
 
 ## Usage
 
-You can download carousal.html file and beauty it and push back.You can push your new files as well so that others in the team can view and use it.
+You can download carousal.html file , beautify it and push back.You can push your new files as well so that others in the team can view and use it.
 
