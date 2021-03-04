@@ -1,4 +1,4 @@
-# Virtual Tour
+# Virtual Guided Tour for Members
 
 This is repo for member's virtual tour experience at any location or branch. We have created this as part of our lab days 2021
 
