@@ -28,7 +28,7 @@
         }
 
         #nav {
-            width: 200px;
+            width: 5px;
             height: 100%;
             position: absolute;
             top: 0;
@@ -73,12 +73,16 @@
 </head>
 <body>
     <script>
+      
+
         $(function () {
-            $('#nav').hover(function () {
-                $(this).animate({ width: '200px' }, 500);
-            }, function () {
-                $(this).animate({ width: '5px' }, 500);
-            }).trigger('mouseleave');
+            $('#nav').hover(
+                function () {
+                    $('#nav').animate({ width: "200px" }, 500);
+                }, function () {
+                    $('#nav').animate({ width: "5px" }, 500);
+                }
+            );
         });
 
         $('#carousel2').hide();
@@ -165,7 +169,6 @@
             <li data-target="#carousel1" data-slide-to="1"></li>
             <li data-target="#carousel1" data-slide-to="2"></li>
             <li data-target="#carousel1" data-slide-to="3"></li>
-            <li data-target="#carousel1" data-slide-to="4"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -181,15 +184,11 @@
             </div>
 
             <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
+                <img width="1550px" height="700px" src="https://images.unsplash.com/photo-1547653872-052e3539decc?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" alt="General">
             </div>
 
             <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
-            </div>
-
-            <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
+                <img width="1550px" height="700px" src="https://images.unsplash.com/photo-1527891751199-7225231a68dd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" alt="General">
             </div>
         </div>
 
@@ -209,8 +208,6 @@
             <li data-target="#carousel2" data-slide-to="0" class="active"></li>
             <li data-target="#carousel2" data-slide-to="1"></li>
             <li data-target="#carousel2" data-slide-to="2"></li>
-            <li data-target="#carousel2" data-slide-to="3"></li>
-            <li data-target="#carousel2" data-slide-to="4"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -221,19 +218,11 @@
             </div>
 
             <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
+                <img width="1550px" height="700px" src="https://emu.edu/now/news/wp-content/uploads/sites/43/2015/12/H9E5489_web.jpg" alt="Basketball Court">
             </div>
 
             <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
-            </div>
-
-            <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
-            </div>
-
-            <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
+                <img width="1550px" height="700px" src="https://elderhsquill.org/wp-content/uploads/2017/02/cal-st-bakersfield.jpg" alt="Basketball Court">
             </div>
         </div>
 
@@ -254,7 +243,6 @@
             <li data-target="#carousel3" data-slide-to="1"></li>
             <li data-target="#carousel3" data-slide-to="2"></li>
             <li data-target="#carousel3" data-slide-to="3"></li>
-            <li data-target="#carousel3" data-slide-to="4"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -275,11 +263,7 @@
             </div>
 
             <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
-            </div>
-
-            <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
+                <img width="1550px" height="700px" src="https://wallpapersplanet.net/sites/default/files/gym-wallpapers-39029-1052305.png" alt="Gym">
             </div>
         </div>
 
@@ -300,7 +284,6 @@
             <li data-target="#carousel4" data-slide-to="1"></li>
             <li data-target="#carousel4" data-slide-to="2"></li>
             <li data-target="#carousel4" data-slide-to="3"></li>
-            <li data-target="#carousel4" data-slide-to="4"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -311,18 +294,14 @@
             </div>
 
             <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
+                <img width="1550px" height="700px" src="https://wallpaperaccess.com/full/3940051.jpg" alt="Baseball Court">
             </div>
             <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
-            </div>
-
-            <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
+                <img width="1550px" height="700px" src="https://images.unsplash.com/photo-1543551865-7da552338743?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGJhc2ViYWxsJTIwZmllbGR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Baseball Court">
             </div>
 
             <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
+                <img width="1550px" height="700px" src="https://olemisssports.com/common/controls/image_handler.aspx?thumb_id=0&image_path=/images/2018/10/31/10275260.jpeg" alt="Baseball Court">
             </div>
 
             <a class="left carousel-control" href="#carousel4" data-slide="prev">
@@ -343,7 +322,6 @@
             <li data-target="#carousel5" data-slide-to="1"></li>
             <li data-target="#carousel5" data-slide-to="2"></li>
             <li data-target="#carousel5" data-slide-to="3"></li>
-            <li data-target="#carousel5" data-slide-to="4"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -359,17 +337,12 @@
             </div>
 
             <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
+                <img width="1550px" height="700px" src="https://i.pinimg.com/originals/48/6c/bc/486cbcd8b0f3dc18149447a660f677f0.jpg" alt="Hockey">
             </div>
 
             <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
+                <img width="1550px" height="700px" src="https://mgoblue.com/images/2018/10/2/20181002ihm_yost.jpg" alt="Hockey">
             </div>
-
-            <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
-            </div>
-
 
             <a class="left carousel-control" href="#carousel5" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
@@ -388,8 +361,6 @@
             <li data-target="#carousel6" data-slide-to="0" class="active"></li>
             <li data-target="#carousel6" data-slide-to="1"></li>
             <li data-target="#carousel6" data-slide-to="2"></li>
-            <li data-target="#carousel6" data-slide-to="3"></li>
-            <li data-target="#carousel6" data-slide-to="4"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -400,20 +371,12 @@
             </div>
 
             <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
-            </div>
-            <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
+                <img width="1550px" height="700px" src="https://gocolumbialions.com/images/2019/7/8/20160421DodgeFitnessCenter_0437.jpg" alt="Swimming Pool">
             </div>
 
             <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
+                <img width="1550px" height="700px" src="https://gocolumbialions.com/images/2019/7/8/20160421DodgeFitnessCenter_0276.jpg?width=1000&height=563&mode=crop" alt="Swimming Pool">
             </div>
-
-            <div class="item">
-                <img src="la.jpg" alt="Los Angeles">
-            </div>
-
 
             <a class="left carousel-control" href="#carousel6" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
