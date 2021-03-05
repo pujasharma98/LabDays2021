@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            overflow: hidden;
+        }
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        .full-height {
+            height: 100%;
+        }
+
+        #nav {
+            width: 5px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            background: #111;
+            color: #fff;
+            overflow: hidden;
+            background-color: rgba(255,255,255,0.5);
+        }
+
+            #nav ul {
+                margin: 0;
+                padding: 0;
+                width: 200px;
+                list-style: none;
+                margin-top: 135px;
+            }
+
+            #nav a span {
+                margin: 0 10px 0 0;
+            }
+
+            #nav a {
+                color: #fff;
+                font-size: 14px;
+                text-decoration: none;
+            }
+
+        li {
+            height: 50px;
+            color: black;
+            cursor: pointer;
+            margin: 10px;
+            background-color: rgba(192,192,192,0.5);
+            font-weight: 700;
+            padding-top: 15px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+      
+
+        $(function () {
+            $('#nav').hover(
+                function () {
+                    $('#nav').animate({ width: "200px" }, 500);
+                }, function () {
+                    $('#nav').animate({ width: "5px" }, 500);
+                }
+            );
+        });
+
+        $('#carousel2').hide();
+        $('#carousel3').hide();
+        $('#carousel4').hide();
+        $('#carousel5').hide();
+
+        function menu1() {
+            $('#carousel1').show();
+            $('#carousel2').hide();
+            $('#carousel3').hide();
+            $('#carousel4').hide();
+            $('#carousel5').hide();
+            $('#carousel6').hide();
+            $('#carousel7').hide();
+        }
+
+        function menu2() {
+            $('#carousel1').hide();
+            $('#carousel2').show();
+            $('#carousel3').hide();
+            $('#carousel4').hide();
+            $('#carousel5').hide();
+            $('#carousel6').hide();
+            $('#carousel7').hide();
+        }
+
+        function menu3() {
+            $('#carousel1').hide();
+            $('#carousel2').hide();
+            $('#carousel3').show();
+            $('#carousel4').hide();
+            $('#carousel5').hide();
+            $('#carousel6').hide();
+            $('#carousel7').hide();
+        }
+
+        function menu4() {
+            $('#carousel1').hide();
+            $('#carousel2').hide();
+            $('#carousel3').hide();
+            $('#carousel4').show();
+            $('#carousel5').hide();
+            $('#carousel6').hide();
+            $('#carousel7').hide();
+        }
+
+        function menu5() {
+            $('#carousel1').hide();
+            $('#carousel2').hide();
+            $('#carousel3').hide();
+            $('#carousel4').hide();
+            $('#carousel5').show();
+            $('#carousel6').hide();
+            $('#carousel7').hide();
+        }
+
+        function menu6() {
+            $('#carousel1').hide();
+            $('#carousel2').hide();
+            $('#carousel3').hide();
+            $('#carousel4').hide();
+            $('#carousel5').hide();
+            $('#carousel6').show();
+            $('#carousel7').hide();
+        }
+    </script>
+
+    <div id="nav">
+        <ul>
+            <li onclick="menu1()" id="menu1" class="active">General</li>
+            <li onclick="menu2()" id="menu2">Basketball Court</li>
+            <li onclick="menu3()" id="menu3">Gym</li>
+            <li onclick="menu4()" id="menu4">Baseball Court</li>
+            <li onclick="menu5()" id="menu5">Hockey</li>
+            <li onclick="menu6()" id="menu6">Swimming Pool</li>
+        </ul>
+    </div>
+
+<style>
+.auto-scrolling
+{
+    position: fixed;
+    bottom: 0;
+    left: 87.5%;
+    z-index: 999;
+    width: 150px;
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    padding: 3px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 100px;
+	margin-bottom: 11px;
+}
+
+</style>	
+<div id="autoScroll" class="textContainer auto-scrolling">
+ <p>bunch of text (I would paste Lorem Ipsum here but it's not necessary!
+ Dom Bess to Washington Sundar, no run, floated just outside off stump, Washi defends off the front foot. Was that Dom Bess's best over of the game? Had good control and a grouping
+ 
+ Dom Bess to Washington Sundar, no run, nicely bowled fullish delivery. Wasn't really flighted, would have rushed the shot but Washi chose to leave
+ 
+ </p>
+</div>
+<script>
+var elem = document.getElementById('autoScroll'); //YOUR DIV ELEMENT WHICH YOU WANT TO SCROLL
+var scroll = 0; //SETTING INITIAL SCROLL TO 0
+
+window.setInterval(function(){ 
+
+ if(elem.scrollTop > scroll)
+  scroll = elem.scrollTop;
+
+ elem.scrollTo({ top: scroll, behavior: 'smooth' }) //SCROLL THE ELEMENT TO THE SCROLL VALUE WITH A SMOOTH BEHAVIOR
+ scroll += 1; //AUTOINCREMENT SCROLL
+}, 50); //THIS WILL RUN IN EVERY 50 MILISECONDS
+</script>
+
+    <div id="carousel1" class="carousel slide full-height" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel1" data-slide-to="1"></li>
+            <li data-target="#carousel1" data-slide-to="2"></li>
+            <li data-target="#carousel1" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <iframe width="1550px" height="700px" id="area" src="https://www.google.com/maps/embed?pb=!4v1614843246311!6m8!1m7!1s29v-oUjINiKWm7uEKJv6Sw!2m2!1d37.42216054688697!2d-122.1376300537737!3f333.7071200860219!4f-3.098775892963843!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="item">
+                <iframe width="1550px" height="700px" id="area" src="https://www.google.com/maps/embed?pb=!4v1614842375482!6m8!1m7!1sCAoSLEFGMVFpcE9XcjlCbVhfTTQzZDI2dVFZRnJ1Y0xKX1k5QnNDbmhFOE96ZFdT!2m2!1d28.6399101!2d77.3696327!3f330.63719022386374!4f-12.750099442041247!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="item">
+                <img width="1550px" height="700px" src="https://images.unsplash.com/photo-1547653872-052e3539decc?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" alt="General">
+            </div>
+
+            <div class="item">
+                <img width="1550px" height="700px" src="https://images.unsplash.com/photo-1527891751199-7225231a68dd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" alt="General">
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#carousel1" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel1" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div id="carousel2" class="carousel slide full-height" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel2" data-slide-to="1"></li>
+            <li data-target="#carousel2" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <iframe width="1550px" height="700px" id="area" src="https://www.google.com/url?q=https://momento360.com/e/u/ff236991d8a5411b885ccb72f14fddc0?utm_campaign%3Dembed%26utm_source%3Dother%26heading%3D192.5%26pitch%3D-1.9%26field-of-view%3D75%26size%3Dmedium&sa=D&source=hangouts&ust=1614939425225000&usg=AFQjCNEZgDfK8kkdYguMdM2eEPMFuClKdA" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="item">
+                <img width="1550px" height="700px" src="https://emu.edu/now/news/wp-content/uploads/sites/43/2015/12/H9E5489_web.jpg" alt="Basketball Court">
+            </div>
+
+            <div class="item">
+                <img width="1550px" height="700px" src="https://elderhsquill.org/wp-content/uploads/2017/02/cal-st-bakersfield.jpg" alt="Basketball Court">
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#carousel2" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel2" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div id="carousel3" class="carousel slide full-height" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel3" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel3" data-slide-to="1"></li>
+            <li data-target="#carousel3" data-slide-to="2"></li>
+            <li data-target="#carousel3" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <iframe width="1550px" height="700px" id="area" src="https://momento360.com/e/u/de63011e6d9843ff928875700d4b5242?utm_campaign=embed&utm_source=other&heading=129.18&pitch=-1.7&field-of-view=75&size=medium" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="item">
+                <iframe width="1550px" height="700px" id="area" src="https://www.google.com/maps/embed?pb=!4v1614843108573!6m8!1m7!1sCAoSLEFGMVFpcE1vMGFZT3hyUHNHbkttWkdzMVFtRTVUS3c5a3VGWmVPdGdmUDJN!2m2!1d37.43994523592!2d-122.15793094694!3f17.612762088434522!4f-9.501058530268054!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="item">
+                <iframe width="1550px" height="700px" id="area" src="https://www.google.com/maps/embed?pb=!4v1614843167469!6m8!1m7!1sCAoSLEFGMVFpcE5iYk54YU9oUlAwWUhHRlltZ2F6NXRkSHlLdHdSZjB4dERPWW1Y!2m2!1d37.439951002231!2d-122.15805078573!3f104.46831583675922!4f-2.457286301506997!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="item">
+                <img width="1550px" height="700px" src="https://wallpapersplanet.net/sites/default/files/gym-wallpapers-39029-1052305.png" alt="Gym">
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#carousel3" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel3" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div id="carousel4" class="carousel slide full-height" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel4" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel4" data-slide-to="1"></li>
+            <li data-target="#carousel4" data-slide-to="2"></li>
+            <li data-target="#carousel4" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <iframe width="1550px" height="700px" id="area" src="https://www.google.com/maps/embed?pb=!4v1614843028781!6m8!1m7!1sCAoSLEFGMVFpcE5XejFMZU5panZ3d1hVdEpsN1JLT1lpMVNmM1BCSVBkdWxpdlVL!2m2!1d37.4350346!2d-122.1543374!3f139.62610737405547!4f-4.894011616296908!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="item">
+                <img width="1550px" height="700px" src="https://wallpaperaccess.com/full/3940051.jpg" alt="Baseball Court">
+            </div>
+            <div class="item">
+                <img width="1550px" height="700px" src="https://images.unsplash.com/photo-1543551865-7da552338743?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGJhc2ViYWxsJTIwZmllbGR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Baseball Court">
+            </div>
+
+            <div class="item">
+                <img width="1550px" height="700px" src="https://olemisssports.com/common/controls/image_handler.aspx?thumb_id=0&image_path=/images/2018/10/31/10275260.jpeg" alt="Baseball Court">
+            </div>
+
+            <a class="left carousel-control" href="#carousel4" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel4" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="carousel5" class="carousel slide full-height" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel5" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel5" data-slide-to="1"></li>
+            <li data-target="#carousel5" data-slide-to="2"></li>
+            <li data-target="#carousel5" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <iframe width="1550px" height="700px" id="area" src="https://momento360.com/e/u/7abb88af9a8c43cc8f8b51be87da8937?utm_campaign=embed&utm_source=other&heading=113&pitch=-12&field-of-view=75&size=medium" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="item">
+                <iframe width="1550px" height="700px" id="area" src="https://momento360.com/e/u/317681d2cf024a2b8e0d4cd52b655483?utm_campaign=embed&utm_source=other&heading=289.7&pitch=14.9&field-of-view=75&size=medium" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="item">
+                <img width="1550px" height="700px" src="https://i.pinimg.com/originals/48/6c/bc/486cbcd8b0f3dc18149447a660f677f0.jpg" alt="Hockey">
+            </div>
+
+            <div class="item">
+                <img width="1550px" height="700px" src="https://mgoblue.com/images/2018/10/2/20181002ihm_yost.jpg" alt="Hockey">
+            </div>
+
+            <a class="left carousel-control" href="#carousel5" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel5" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="carousel6" class="carousel slide full-height" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel6" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel6" data-slide-to="1"></li>
+            <li data-target="#carousel6" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <iframe width="1550px" height="700px" id="area" src="https://momento360.com/e/u/b005aab4c92840f5bd77253c706e1ba4?utm_campaign=embed&utm_source=other&heading=263&pitch=-12.3&field-of-view=75&size=medium" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="item">
+                <img width="1550px" height="700px" src="https://gocolumbialions.com/images/2019/7/8/20160421DodgeFitnessCenter_0437.jpg" alt="Swimming Pool">
+            </div>
+
+            <div class="item">
+                <img width="1550px" height="700px" src="https://gocolumbialions.com/images/2019/7/8/20160421DodgeFitnessCenter_0276.jpg?width=1000&height=563&mode=crop" alt="Swimming Pool">
+            </div>
+
+            <a class="left carousel-control" href="#carousel6" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel6" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
